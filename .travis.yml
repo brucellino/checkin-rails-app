@@ -3,7 +3,8 @@ rvm:
 - 2.4.1
 apt_addons: 
 before_install: 
-install: 
+install:
+-  bundle install
 before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
