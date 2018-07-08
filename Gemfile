@@ -62,3 +62,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rubocop", "~> 0.58.0"
+
+gem "therubyracer", "~> 0.12.3"
+
+gem "less-rails", "~> 3.0"
+
+gem "twitter-bootstrap-rails", "~> 3.2"
