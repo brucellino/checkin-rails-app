@@ -1,5 +1,7 @@
 # README
 
+[![Build Status](https://travis-ci.org/brucellino/checkin-rails-app.svg?branch=master)](https://travis-ci.org/brucellino/checkin-rails-app) [![Maintainability](https://api.codeclimate.com/v1/badges/ef154c97eda912b80aca/maintainability)](https://codeclimate.com/github/brucellino/checkin-rails-app/maintainability)
+
 This is a small personal repository to play with EGI CheckIn and how it might work with Rails apps.
 Contributions are not really expected, so please don't be offended if I ignore you :)
 
