@@ -1,13 +1,20 @@
 language: ruby
 rvm:
 - 2.4.1
-apt_addons:
-before_install:
-install:
+apt_addons: 
+before_install: 
+install: 
 before_script:
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- "./cc-test-reporter before-build"
 - rubocop app
 script:
-- rails test
-after_success:
-after_failure:
-after_script:
+- bundle exec rake
+after_success: 
+after_failure: 
+after_script: 
+env:
+  global:
+    secure: S1fGf5vvAMma/erdQCuKldOG1DDcjJXm10l7qCW4Ig+3svwy15W/tVbilY5FZg+tP9vWMWa5enxmuSnLnjyumbGPS5Cla0J2iz5J3Bh+DaQIP7Tt/Btfy6mNLRHyMG5jvjGqXk0aU0piYtWZkQ5RnUZtkn4on+bX7A7clTKuIJZPJ3v5nMKU7krpviQxmrUpV73Un6I5I/zcRaU18gqy2O9E867hCMRx6SI+RYHSRXRPcrSGlR4NPe6E6U1PN6QbpSpKevj7HeqkwTlEmcFzWegMmsUBpNWkuFzmHu0+RxPFhfGaBjV8TBHLjmEtGN8WuicInpqENSsYEJcvBmsaqmxJZqN2es01TqNEce7iCKpjS3wutzgMToIGOAqwC30Vo680yrKZLdPcwrazUA8VwuXbgvayuexufRfupNEIYeWKEPtyQMUqFcIY1UTTIBatmIzMCdw8jQdFhl/haFuvb/B0WjKKKVfL584ItBisQ58i87cvdehK/Dc5dge4zjii1ZycseXaFviiQ5Bj/ERqEW7fiMk5Z2Vjn+5oOyVWwzy//sJhYMZX0YaVsg/F0UF6EPcKSYUUQm0Hh0GstywsDcz6vybjWQztItRotEDx9aKpkWWJH2TkvpnaWv/U8tA9eeZuB7rCuJenc3WL6bfr2DcbDlOogOdF7l/jAEiGW4U=
