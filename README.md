@@ -5,7 +5,7 @@
 This is a small personal repository to play with EGI CheckIn and how it might work with Rails apps.
 Contributions are not really expected, so please don't be offended if I ignore you :)
 
-## Getting strated
+## Getting started
 
 You will need the following : 
 
