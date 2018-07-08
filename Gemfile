@@ -68,3 +68,7 @@ gem "therubyracer", "~> 0.12.3"
 gem "less-rails", "~> 3.0"
 
 gem "twitter-bootstrap-rails", "~> 3.2"
+
+gem "jquery-rails", "~> 4.3"
+
+gem "jquery-easing-rails", "~> 0.0.2"
