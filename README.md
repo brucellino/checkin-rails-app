@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails application which I'm using personally to see what we can do with CheckIn
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version: 2.4.1
+* System dependencies: just Rails
+* Configuration: nothing special
+* Database creation: No models yet
+* Database initialization: none yet
+* How to run the test suite: `rails test`
+* Services: none
+* Deployment instructions: `rails s`
