@@ -1,5 +1,7 @@
 # README
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/ef154c97eda912b80aca/maintainability)](https://codeclimate.com/github/brucellino/checkin-rails-app/maintainability) [![Build Status](https://travis-ci.org/brucellino/checkin-rails-app.svg?branch=master)](https://travis-ci.org/brucellino/checkin-rails-app)
+
 This is a simple Rails application which I'm using personally to see what we can do with CheckIn
 
 
