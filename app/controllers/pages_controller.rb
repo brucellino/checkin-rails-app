@@ -1,13 +1,16 @@
 class PagesController < ApplicationController
-  def index
+
+  def show
+    if valid_page?
+      render template: "pages/#{params[:page]}"
+    else
+      render file: 'public/404.html', status: not_found
+    end
   end
 
-  def home
-  end
-
-  def not_authorised
-  end
-
-  def login
+  private
+  
+  def valid_page?
+    template_exists? "pages/#{params[:page]}"
   end
 end

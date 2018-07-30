@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="jumbotron">
+  <h1 class="display-3">Welcome to the CheckIn App</h1>
+  <p class="lead">Use this app to see what CheckIn knows about you</p>
+  <hr class="my-2">
+  <p class="lead">
+  <%= link_to  "Log In",pages_login_path, class: "btn btn-primary btn-lg" , role: 'button' %>
+    <a class="btn btn-link" type="button" href="">Read about it</a>
+  </p>
+</div>
