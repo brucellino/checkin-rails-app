@@ -1,7 +1,15 @@
 language: ruby
 rvm:
 - 2.4.1
+env:
+  global:
+    secure: J+Puy0S08aumIl+DEbIbmNNggnx0WROInUnde6+74vlwg+MBs1Fit0tz2jgVYTAHzOFk2KiSqf+GcTNSni86Tf9C4fAHujZde48JNR8BYpEAFEDTU3OTbaUDHoHGjtMa6b2jiV5jKpCnDXFinaDkTX1R23ijKgZ1TokUkbGXPA4srSDM5qs5efmk9rGbreOMKNG/AST1mFOn8YDEwMVDGMx/nn6M0DNiptDPu/OzCee5zR7kOGFJQ+t2lAtMKa0Nl6lzls1fdx71VYKyuTCyP7yCrbtzs/KGOaHdgPcfN8t4udR5JtOEu+sVYkqj6tc+0lGvm7Ow5RS0zuNQPMeS6YDpVOX11VwbrfF3eawPaqvMpWBsH24zhVoVhZ0PYiYhuGYQ7tmzO425gIF0KqNR82HXP4k1ZofA0xNCwuvV/1FTevEog/sSOEixxzgDr4sZnmhjhjPvAfy7yn+IYZz7DSKVuydE1q4QPXoVJTKnBy/s3tqytwlBEax8SfpSvoKhFW4XdAE477Yr5zbNARQS9UQbDOFmVXSdpOA3UZap+qNTl6EykcGiYTeJpIVH35TkTBqOLMi3pL+pNxkCY4lkuWpSvZggMmOpYbkPp9puJuSVokCTj+APduo50czNc9GSl45XCUqeDu1BNpfF6d9LB7//NKcdCNx8VdLQ8C6BZH4=
+
 before_script:
   - "curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter"
   - "chmod +x ./cc-test-reporter"
   - "./cc-test-reporter before-build"
+script:
+  - bundle exec rspec
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
