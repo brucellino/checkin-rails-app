@@ -1,0 +1,4 @@
+digraph AppFlow {
+  home -> about;
+  home -> login;  
+}
